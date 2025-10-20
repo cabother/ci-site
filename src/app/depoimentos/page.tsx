@@ -111,7 +111,7 @@ export default function DepoimentosPage() {
                 <div className="mb-6">
                   <Quote className="h-8 w-8 text-primary-200 mb-3" />
                   <p className="text-gray-600 italic">
-                    "{depoimento.texto}"
+                    &ldquo;{depoimento.texto}&rdquo;
                   </p>
                 </div>
 
