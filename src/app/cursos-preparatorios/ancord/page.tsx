@@ -86,9 +86,14 @@ export default function ANCORDPage() {
                   <div className="text-gray-400">ou 12x de R$ 36,58 sem juros</div>
                   <div className="text-green-600 font-medium mt-2">10% OFF no PIX</div>
                 </div>
-                <button className="w-full bg-success-600 text-white px-4 py-3 rounded-md font-medium hover:bg-success-700 transition-colors mb-4">
+                <a 
+                  href="https://app.4st.com.br/produto/LsQ6wufa"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-success-600 text-white px-4 py-3 rounded-md font-medium hover:bg-success-700 transition-colors mb-4 block text-center"
+                >
                   Comprar Agora
-                </button>
+                </a>
                 <button className="w-full border border-primary-600 text-primary-600 px-4 py-3 rounded-md font-medium hover:bg-primary-50 transition-colors">
                   Adicionar ao Carrinho
                 </button>

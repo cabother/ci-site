@@ -91,7 +91,7 @@ export default function DepoimentosPage() {
             {estatisticas.map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-4xl font-bold text-primary-600 mb-2">{stat.numero}</div>
-                <div className="text-gray-600">{stat.descricao}</div>
+                <div className="text-white">{stat.descricao}</div>
               </div>
             ))}
           </div>

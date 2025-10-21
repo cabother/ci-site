@@ -37,14 +37,14 @@ export default function CursosLivresPage() {
 
   return (
     <PageLayout>
-      <div className="bg-gradient-to-br from-primary-50 to-white py-16">
+      <div className="bg-black py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header da página */}
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
               Cursos Livres
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               Desenvolva habilidades essenciais para sua carreira com nossos cursos práticos e focados no seu crescimento profissional
             </p>
           </div>
@@ -52,25 +52,25 @@ export default function CursosLivresPage() {
           {/* Estatísticas */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
-                <BookOpen className="h-8 w-8 text-primary-600" />
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gray-800 rounded-full mb-4">
+                <BookOpen className="h-8 w-8 text-white" />
               </div>
-              <div className="text-3xl font-bold text-primary-600 mb-2">3</div>
-              <div className="text-gray-600">Cursos Disponíveis</div>
+              <div className="text-3xl font-bold text-white mb-2">3</div>
+              <div className="text-gray-300">Cursos Disponíveis</div>
             </div>
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
-                <Users className="h-8 w-8 text-primary-600" />
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gray-800 rounded-full mb-4">
+                <Users className="h-8 w-8 text-white" />
               </div>
-              <div className="text-3xl font-bold text-primary-600 mb-2">15K+</div>
-              <div className="text-gray-600">Alunos Formados</div>
+              <div className="text-3xl font-bold text-white mb-2">15K+</div>
+              <div className="text-gray-300">Alunos Formados</div>
             </div>
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
-                <Award className="h-8 w-8 text-primary-600" />
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gray-800 rounded-full mb-4">
+                <Award className="h-8 w-8 text-white" />
               </div>
-              <div className="text-3xl font-bold text-primary-600 mb-2">98%</div>
-              <div className="text-gray-600">Satisfação</div>
+              <div className="text-3xl font-bold text-white mb-2">98%</div>
+              <div className="text-gray-300">Satisfação</div>
             </div>
           </div>
 
@@ -79,36 +79,36 @@ export default function CursosLivresPage() {
             {cursos.map((curso) => {
               const IconComponent = curso.icone
               return (
-                <div key={curso.id} className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
+                <div key={curso.id} className="bg-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
                   <div className="p-6">
                     <div className="text-center mb-6">
-                      <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
-                        <IconComponent className="h-8 w-8 text-primary-600" />
+                      <div className="inline-flex items-center justify-center w-16 h-16 bg-gray-800 rounded-full mb-4">
+                        <IconComponent className="h-8 w-8 text-white" />
                       </div>
-                      <h3 className="text-xl font-bold text-gray-900 mb-2">{curso.nome}</h3>
-                      <p className="text-gray-600 mb-4">{curso.descricao}</p>
+                      <h3 className="text-xl font-bold text-white mb-2">{curso.nome}</h3>
+                      <p className="text-gray-300 mb-4">{curso.descricao}</p>
                     </div>
 
                     <div className="mb-6">
                       <div className="text-center mb-4">
-                        <div className="text-2xl font-bold text-primary-600">{curso.preco}</div>
-                        <div className="text-sm text-gray-500">{curso.parcelas}</div>
-                        <div className="text-sm text-green-600 font-medium mt-1">10% OFF no PIX</div>
+                        <div className="text-2xl font-bold text-white">{curso.preco}</div>
+                        <div className="text-sm text-gray-400">{curso.parcelas}</div>
+                        <div className="text-sm text-green-400 font-medium mt-1">10% OFF no PIX</div>
                       </div>
 
                       <div className="space-y-2 mb-4">
-                        <div className="flex items-center text-sm text-gray-600">
-                          <Clock className="h-4 w-4 mr-2 text-primary-600" />
+                        <div className="flex items-center text-sm text-gray-300">
+                          <Clock className="h-4 w-4 mr-2 text-white" />
                           {curso.duracao} de acesso
                         </div>
-                        <div className="flex items-center text-sm text-gray-600">
-                          <BookOpen className="h-4 w-4 mr-2 text-primary-600" />
+                        <div className="flex items-center text-sm text-gray-300">
+                          <BookOpen className="h-4 w-4 mr-2 text-white" />
                           Material completo
                         </div>
                       </div>
                     </div>
 
-                    <p className="text-sm text-gray-600 mb-6">{curso.descricaoCompleta}</p>
+                    <p className="text-sm text-gray-300 mb-6">{curso.descricaoCompleta}</p>
 
                     <div className="space-y-3">
                       <a 
@@ -117,9 +117,14 @@ export default function CursosLivresPage() {
                       >
                         Saiba Mais
                       </a>
-                      <button className="w-full border border-primary-600 text-primary-600 px-4 py-3 rounded-md font-medium hover:bg-primary-50 transition-colors">
+                      <a 
+                        href="https://app.4st.com.br/produto/LsQ6wufa"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full border border-white text-white px-4 py-3 rounded-md font-medium hover:bg-gray-800 transition-colors block text-center"
+                      >
                         Comprar Agora
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -129,10 +134,10 @@ export default function CursosLivresPage() {
 
           {/* CTA final */}
           <div className="text-center mt-16">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-2xl font-bold text-white mb-4">
               Quer desenvolver múltiplas habilidades?
             </h2>
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-300 mb-6">
               Conheça nossos pacotes combinados e economize até 30% no investimento total.
             </p>
             <button className="bg-primary-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-primary-700 transition-colors">

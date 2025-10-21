@@ -116,7 +116,7 @@ export default function Header() {
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center space-x-4">
-            <a href="#area-aluno" className="text-white hover:text-primary-600 px-3 py-2 text-sm font-medium whitespace-nowrap">
+            <a href="/area-aluno/login" className="text-white hover:text-primary-600 px-3 py-2 text-sm font-medium whitespace-nowrap">
               Área do aluno
             </a>
             <a href="/cursos-preparatorios" className="bg-primary-600 text-black px-4 py-2 rounded-md text-sm font-medium hover:bg-primary-700 transition-colors whitespace-nowrap">
@@ -190,7 +190,7 @@ export default function Header() {
               <a href="/contato" className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-100">
                 Contato
               </a>
-              <a href="#area-aluno" className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-100">
+              <a href="/area-aluno/login" className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-100">
                 Área do aluno
               </a>
               <a href="/cursos-preparatorios" className="block px-3 py-2 text-sm bg-primary-600 text-black rounded-md mx-3">

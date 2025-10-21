@@ -104,9 +104,14 @@ export default function CursosLivres() {
 
                   {/* Botões */}
                   <div className="space-y-3 mt-auto">
-                    <button className="w-full bg-success-600 text-white px-4 py-3 rounded-md font-medium hover:bg-success-700 transition-colors">
+                    <a 
+                      href="https://app.4st.com.br/produto/LsQ6wufa"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full bg-success-600 text-white px-4 py-3 rounded-md font-medium hover:bg-success-700 transition-colors block text-center"
+                    >
                       Comprar Agora
-                    </button>
+                    </a>
                     <button className="w-full border border-primary-600 text-primary-600 px-4 py-3 rounded-md font-medium hover:bg-primary-50 transition-colors">
                       Saiba Mais
                     </button>

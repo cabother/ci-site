@@ -87,7 +87,9 @@ export default function HeroSection() {
 
                 <div className="flex space-x-3 mt-auto">
                   <a 
-                    href={`/cursos-preparatorios/${curso.id}`}
+                    href="https://app.4st.com.br/produto/LsQ6wufa"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex-1 bg-success-600 text-white px-4 py-3 rounded-md font-medium hover:bg-success-700 transition-colors text-center"
                   >
                     Comprar Agora

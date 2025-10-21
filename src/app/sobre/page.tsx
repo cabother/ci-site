@@ -50,14 +50,14 @@ export default function SobrePage() {
           <div className="mb-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">Nossa História</h2>
-                <p className="text-gray-600 mb-6">
+                <h2 className="text-3xl font-bold text-white mb-6">Nossa História</h2>
+                <p className="text-white mb-6">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
-                <p className="text-gray-600 mb-6">
+                <p className="text-white mb-6">
                   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
-                <p className="text-gray-600">
+                <p className="text-white">
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
                 </p>
               </div>
@@ -77,12 +77,12 @@ export default function SobrePage() {
 
           {/* Estatísticas */}
           <div className="mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Nossos Números</h2>
+            <h2 className="text-3xl font-bold text-white text-center mb-12">Nossos Números</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {estatisticas.map((stat, index) => (
                 <div key={index} className="text-center">
                   <div className="text-4xl font-bold text-primary-600 mb-2">{stat.numero}</div>
-                  <div className="text-gray-600">{stat.descricao}</div>
+                  <div className="text-white">{stat.descricao}</div>
                 </div>
               ))}
             </div>
@@ -90,7 +90,7 @@ export default function SobrePage() {
 
           {/* Valores */}
           <div className="mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Nossos Valores</h2>
+            <h2 className="text-3xl font-bold text-white text-center mb-12">Nossos Valores</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {valores.map((valor, index) => {
                 const IconComponent = valor.icone
@@ -99,8 +99,8 @@ export default function SobrePage() {
                     <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
                       <IconComponent className="h-8 w-8 text-primary-600" />
                     </div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-3">{valor.titulo}</h3>
-                    <p className="text-gray-600 text-sm">{valor.descricao}</p>
+                    <h3 className="text-lg font-semibold text-white mb-3">{valor.titulo}</h3>
+                    <p className="text-white text-sm">{valor.descricao}</p>
                   </div>
                 )
               })}
@@ -109,7 +109,7 @@ export default function SobrePage() {
 
           {/* Equipe */}
           <div className="mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Nossa Equipe</h2>
+            <h2 className="text-3xl font-bold text-white text-center mb-12">Nossa Equipe</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
                 { nome: 'Tiago Feitosa', cargo: 'CEO & Fundador' },

@@ -87,10 +87,10 @@ export default function CursosPreparatorios() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Título da seção */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Cursos Preparatórios
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-white max-w-3xl mx-auto">
             Prepare-se para as principais certificações do mercado financeiro com nossos cursos completos
           </p>
         </div>
@@ -134,9 +134,14 @@ export default function CursosPreparatorios() {
 
                 {/* Botões */}
                 <div className="space-y-3 mt-auto">
-                  <button className="w-full bg-success-600 text-white px-4 py-3 rounded-md font-medium hover:bg-success-700 transition-colors">
+                  <a 
+                    href="https://app.4st.com.br/produto/LsQ6wufa"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full bg-success-600 text-white px-4 py-3 rounded-md font-medium hover:bg-success-700 transition-colors block text-center"
+                  >
                     Comprar Agora
-                  </button>
+                  </a>
                   <button className="w-full border border-primary-600 text-primary-600 px-4 py-3 rounded-md font-medium hover:bg-primary-50 transition-colors">
                     Saiba Mais
                   </button>
@@ -156,7 +161,7 @@ export default function CursosPreparatorios() {
 
         {/* CTA adicional */}
         <div className="text-center mt-12">
-          <p className="text-gray-600 mb-4">
+          <p className="text-white mb-4">
             Não encontrou o curso que procura? Conheça nossa assinatura completa!
           </p>
           <button className="bg-primary-600 text-black px-8 py-3 rounded-lg font-medium hover:bg-primary-700 transition-colors">
